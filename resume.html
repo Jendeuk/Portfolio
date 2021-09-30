@@ -4,43 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/P.PNG" />
     <link rel="stylesheet" href="style.css" />
     <title>Personal Portfolio Webpage</title>
   </head>
   <body>
     <header>
-      <img src="" />
-      <nav id="navbar">
+      <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="projects.html" target="_blank">Projects</a>
-        <a href="resume.html" target="_blank">Resume</a>
-        <a href="portfolio.html" target="_blank">Portfolio</a>
-        <a href="about.html" target="_blank">About</a>
-        <button id="contactBtn"><a href="contact.html" target="_blank">Contact</a></button>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="contactBtn">Contact</a>
       </nav>
     </header>
-      <div ></div>
-      <section id="welcome-section">
-        <h1>Hey I am Jenny</h1>
-        <p>a web developer</p>
-      </section>
-      <section id="projects">
-        <h1>My projects</h1>
-        <div class="container">
-          <div class="project-tile">
-            <img
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-            />
-            <a
-              href="https://jendeuk.github.io/fcc-technical-documentation-page/"
-              >Technical documentation page</a
-            >
+    <main>
+      <section class="section">
+        <div>
+          <h1>Resume / CV</h1>
+          <div class="resumeText">
+            <h2>Academic background</h2>
+            <h4>High school</h4>
+            <p><i>Lillehammer Videregående skole: </i> (2019-2021)</p>
+            <h4>Junior high school</h4>
+            <p><i>Hammartun ungdomsskole: </i> (2015-2019)</p>
+            <h4>Primary School</h4>
+            <p><i>Hammartun barneskole: </i>(2009-2015)</p>
           </div>
-       
+          <br />
+          <div class="resumeText">
+            <h2>Education</h2>
+            <h4>NTNU: Norwegian University of Science and Technology</h4>
+            <p><i>One year programme - Web Design </i> (Gjøvik, Norway 2021)</p>
+            <ul>
+              <li>First year student, webdesigner</li>
+            </ul>
+          </div>
+          <br />
+          <div class="resumeText">
+            <h2>Work experience</h2>
+            <h4>Ringo lekebutikk</h4>
+            <p><i>Seller </i> (2016)</p>
+            <h4>Lillehammer sykehus</h4>
+            <p><i>Service </i> (2015)</p>
+          </div>
+          <br />
+          <div class="resumeText">
+            <h2>List of language</h2>
+            <ul>
+              <li>Vietnamese</li>
+              <li>Norwegian</li>
+              <li>English</li>
+            </ul>
+          </div>
+
+          <br />
+          <div class="resumeText">
+            <h2>List of skills</h2>
+            <!-- Nested list -->
+            <ul>
+              <li>
+                <strong>language</strong>
+                <ul>
+                  <li>HTML, CSS, Javascript</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <strong>Technologies</strong>
+                <ul>
+                  <li>Figma</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p>HTML</p>
+            <div class="bar">
+              <div class="barProgressHtml"></div>
+            </div>
+          </div>
+          <div>
+            <p>CSS</p>
+            <div class="bar">
+              <div class="barProgressCss"></div>
+            </div>
+          </div>
+          <div>
+            <p>Javascript</p>
+            <div class="bar">
+              <div class="barProgressJs"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      **This is just an exercise portfolio. © Created for freeCodeCamp
-    </footer>
+    <footer>Website created by Jenny Ngo Luong</footer>
   </body>
 </html>

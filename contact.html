@@ -4,28 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/P.PNG" />
     <link rel="stylesheet" href="style.css" />
     <title>Personal Portfolio Webpage</title>
   </head>
   <body>
     <header>
-      <img src="" />
-      <nav id="navbar">
+      <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="projects.html" target="_blank">Projects</a>
-        <a href="resume.html" target="_blank">Resume</a>
-        <a href="portfolio.html" target="_blank">Portfolio</a>
-        <a href="about.html" target="_blank">About</a>
-        <button id="contactBtn"><a href="contact.html" target="_blank">Contact</a></button>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="contactBtn">Contact</a>
       </nav>
     </header>
-      <div ></div>
-      <section id="welcome-section">
-        <h1>Contact me</h1>
+
+    <!-- I am using google font's icons -->
+    <main>
+      <section class="section">
+        <div class="contact">
+          <h1>Contact</h1>
+          <div>
+            <div>
+              <div class="info">
+                <img src="img/name.png" alt="name" />
+                <h3>Name</h3>
+                <p>Jenny Ngo Luong</p>
+              </div>
+              <div class="info">
+                <img src="img/adress.png" alt="address" />
+                <h3>Address</h3>
+                <address>Lillehammer, Norway</address>
+              </div>
+              <div class="info">
+                <img src="img/email.png" alt="email" />
+                <h3>Email</h3>
+                <p><a href="mailto:thekitty@live.no">thekitty@live.no</a></p>
+              </div>
+              <div class="info">
+                <img src="img/call.png" alt="phone number" />
+                <h3>Phone number</h3>
+                <p><a href="tel:40077269">40077269</a></p>
+              </div>
+            </div>
+            <div class="social">
+              <!-- Social media icons from google -->
+              <h2>Social media</h2>
+              <div>
+                <img src="img/facebook.png" alt="my facebook" />
+                <a
+                  href="https://www.facebook.com/jenny.luong.10/"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </div>
+              <div>
+                <img src="img/instagram.png" alt="my instagram" />
+                <a href="https://www.instagram.com/jennylntt/" target="_blank"
+                  >Instagram</a
+                >
+              </div>
+              <div>
+                <img src="img/github.png" alt="my github" />
+                <a href="https://github.com/Jendeuk" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      **This is just an exercise portfolio. © Created for freeCodeCamp
-    </footer>
+
+    <footer>Website created by Jenny Ngo Luong</footer>
   </body>
 </html>

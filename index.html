@@ -4,40 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/P.PNG" />
     <link rel="stylesheet" href="style.css" />
     <title>Personal Portfolio Webpage</title>
   </head>
   <body>
     <header>
-      <img src="" />
-      <nav id="navbar">
+      <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="projects.html" >Projects</a>
-        <a href="resume.html" >Resume</a>
-        <a href="portfolio.html" >Portfolio</a>
-        <a href="about.html" >About</a>
-        <button id="contactBtn"><a href="contact.html" >Contact</a></button>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="contactBtn">Contact</a>
       </nav>
     </header>
-    
-      <section id="welcome-section">
-        <h1>Hey I am Jenny</h1>
-        <p> A webdesigner student at NTNU from Norway</p>
-      </section>
-      <section id="aboutMe">
-        <h1>My projects</h1>
-        <div class="container">
-          <div class="project-tile">
-            <img
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-            />
-          
+
+    <main>
+      <section class="welcome-section">
+        <div>
+          <div>
+            <img src="img/me.jpg" alt="An image of me" />
           </div>
-       
+          <div class="info">
+            <h1>Hello, I am Jenny!</h1>
+            <p>A webdesigner student at NTNU from Norway</p>
+          </div>
+        </div>
       </section>
-  
-    <footer>
-      **This is just an exercise portfolio. © Created for freeCodeCamp
-    </footer>
+      <section class="aboutMe">
+        <h2>About me</h2>
+        <div class="text-box">
+          <p>My name is Jenny Luong and I am a webdesigner from Norway</p>
+          <p>Other than being a webdesigner I also like to:</p>
+          <ul>
+            <li>dance</li>
+            <li>sing</li>
+            <li>watch movies</li>
+          </ul>
+        </div>
+        <blockquote>
+          <q
+            >Memories warm you up from the inside. But they also tear you
+            apart.</q
+          >
+          <cite>— Haruki Murakami, Kafka on the Shore</cite>
+        </blockquote>
+      </section>
+    </main>
+
+    <footer>Website created by Jenny Ngo Luong</footer>
   </body>
 </html>
