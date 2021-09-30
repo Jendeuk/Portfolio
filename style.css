@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* NAV */
+nav {
+  background-color: #ffffff;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+nav > a {
+  text-decoration: none;
+  color: rgb(7, 0, 0);
+  margin: 15px;
+  font-size: 25px;
+  display: block;
+  padding: 0.1rem;
+  font-weight: bold;
+}
+
+nav > a:hover {
+  transition: box-shadow 0s;
+  display: inline-block;
+
+  border: 3px solid #b6977d;
+}
+/* MAIN */
+main {
+  min-height: 100vh;
+  margin-top: 70px;
+}
+/* Picture for portfolio */
+.bg {
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  background-position-y: -50px;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+/* section welcome in home-page */
+section#welcome-section {
+  position: relative;
+  background-color: rgba(104, 50, 50, 0.72);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+section#welcome-section > h1 {
+  font-size: 70px;
+  color: white;
+}
+
+section#welcome-section > p {
+  font-size: 40px;
+  color: white;
+}
+/* ABOUT ME */
+section#aboutMe {
+  background-color: #ffffff;
+  height: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* PROJECTS */
+section#projects {
+  background-color: #b6977d;
+  height: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* ABOUT ME */
+
+section#projects > h1 {
+  font-size: 50px;
+  color: #000000;
+  padding: 20px 0 10px 0;
+}
+
+section#projects > div.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-gap: 15px;
+  margin: 25px 40px 25px 40px;
+}
+section#projects > div.container > div {
+  display: flex;
+  flex-direction: column;
+}
+section#projects > div.container > div > img {
+  width: 100%;
+}
+
+section#projects > div.container > div > a {
+  background-color: rgb(126, 125, 125);
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  color: rgb(0, 0, 0);
+}
+
+button#contactBtn {
+  display: block;
+  border: 0;
+  font-size: 25px;
+  background-color: #b6977d;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+button#contactBtn > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+button#contactBtn:hover,
+button#contactBtn:focus {
+  background-color: #7c6655;
+}
+
+button#contactBtn:active {
+  background-color: #7c6655;
+}
+/* FOOTER */
+footer {
+  height: 170px;
+  color: #fdd2bf;
+  display: flex;
+  background-color: #584835;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  section#projects > div.container {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .bg {
+    background-image: url(https://i.pinimg.com/originals/20/9b/bd/209bbd0624baa2fe231c901fda331803.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-y: 0;
+  }
+}
